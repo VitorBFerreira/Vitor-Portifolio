@@ -1,0 +1,537 @@
+/* Estilo geral*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+body {
+    background-color: #fbfbeb;
+    height: 100vh;
+
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+
+}
+
+
+.vitor-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500px;
+    background-color: #9563d4;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+h2.titulo {
+    color: #9563d4;
+    font-size: 45px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #5c77bd;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #bcdccc
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilo do Cabeçalho*/
+header {
+    padding: 40px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+header nav.menu-desktop a:hover {
+    color: #5c77bd;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+header nav ul {
+    list-style-type: none;
+
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* Estilo DO MENU MOBILE */
+
+.vitor-abrir-menu i{
+    color: #6f5192;
+    font-size: 40px;
+}
+
+.menu-mobile{
+    background-color: #fbfbeb;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+    transition: .6s;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile .vitor-fechar{
+    padding: 20px 6%;
+}
+
+.menu-mobile .vitor-fechar i{
+    color: #9bcecf;
+    font-size: 32px;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #9bcecf;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #9bcecf;
+    color: #9563d4;
+}
+
+.vitor-contato button:hover,
+form .vitor-enviar input:hover {
+    box-shadow: 0px 0px 10px #6f5192;
+    transform: scale(1.05);
+}
+
+.overlay-menu{
+    background-color: #fafaebc0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}
+
+/* Estilo Topo do Site */
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+
+}
+
+.topo-do-site h1 {
+    color: #9563d4;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site h1 span {
+    color: #9bcecf;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #9bcecf;
+    margin: 40px 0;
+    font-size: 22px;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    width: 500px;
+    height: 500px;
+    border-radius: 90%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    border: 5px solid #bcdccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+.interface .logo img {
+    width: 400px;
+    height: 400px;
+    border-radius: 30%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+
+
+}
+
+.interface .menu-desktop {
+    font-size: 21px;
+    line-height: 40px;
+}
+
+/* Estilo Especialidades*/
+section.especialidades {
+    padding: 40px 4%;
+
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+.especialidades .especialidades-box {
+    color: #9bcecf;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #6f519296
+}
+
+.especialidades .especialidades-box i {
+    font-size: 70px;
+    color: #9563d4;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/*ESTILO SOBRE*/
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #9bcecf;
+}
+
+.sobre .img-sobre img {
+    width: 400px;
+    height: 700px;
+    border-radius: 4%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    color: #9563d4;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #5c77bd;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.vitor-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #bcdccc;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+/*ESTILO PORTIFOLIO*/
+section.portifolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #bcdcccb4;
+}
+
+section.portifolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port {
+    width: 360px;
+    height: 600px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: .9s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-size: cover;
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0f0f0f98;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fbfbeb;
+    opacity: 0;
+    transition: .8s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/*ESTILO DO FORMULÁRIO DE CONTATO*/
+section.formulario {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #bcdccc4b;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 300px;
+}
+
+form .vitor-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .vitor-enviar input {
+    width: 120px;
+    background-color: #9563d4;
+    color: #000000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/*ESTILO DO RODAPÉ*/
+.footer {
+    padding: 35px 4%;
+    box-shadow: 0 0 40px 10px #bcdcccb4;
+}
+
+.footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+
+}
+
+.borda {
+    border-top: 2px solid #6f5192;
+}
+
+footer .line-footer p i {
+    color: #5c77bd;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #9563d4;
+}
+
+@media screen and (max-width: 1020px) {
+
+    /*CLASSES GERAIS*/
+    .flex {
+        flex-direction: column;
+    }
+
+    h2.titulo {
+        
+        font-size: 38px;
+        line-height: 32px;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    /*CABEÇALHO CELULAR*/
+    .menu-desktop,
+    .vitor-contato {
+        display: none;
+    }
+
+    /*TOPO DO SITE*/
+    section.topo-do-site .flex {
+        gap: 40px;
+
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    /* Estilo Especialidades*/
+    section.especialidades {
+        padding: 40px 8%;
+
+    }
+
+    /*ESTILO SOBRE*/
+section.sobre {
+    padding: 80px 8%;
+    
+}
+.sobre .txt-sobre h2 {
+    font-size: 34px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.vitor-social{
+    text-align: center;
+}
+
+.img-sobre .img{
+    width: 100%;
+}
+
+/*ESTILO PORTIFOLIO*/
+
+section.portifolio {
+    padding: 80px 4%;
+
+}
+
+.img-port {
+    width: 100%;
+    max-width: 360px;
+    height: 600px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: .9s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+section.portifolio .flex {
+    gap: 60px;
+}
+
+/*ESTILO DO RODAPÉ*/
+
+.footer .flex {
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer .line-footer {
+    text-align: center;
+
+}
+
+}
