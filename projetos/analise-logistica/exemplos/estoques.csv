@@ -1,0 +1,4 @@
+material,descricao,estoque_origem,estoque_destino,estoque_comprometido
+MAT-001,Resina demonstrativa,120,800,0
+MAT-002,Polimero demonstrativo,420,900,0
+MAT-003,Insumo demonstrativo,50,100,0
